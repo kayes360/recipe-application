@@ -4,7 +4,9 @@ import Image from "next/image";
 import LogoImage from "@/public/assets/lws-kitchen.png";
 export default function Header() {
   return (
-    <header className="container mx-auto px-4 py-4 shadow-lg fixed top-0 bg-white z-50">
+    <div className="shadow-lg bg-white z-50 fixed top-0 left-0 right-0  ">
+        
+    <header className="  container mx-auto px-4 py-4     ">
       <nav className="flex justify-between items-center">
         <Link href="/" className="text-3xl font-bold">
           <Image
@@ -52,5 +54,6 @@ export default function Header() {
         </div>
       </nav>
     </header>
+    </div>
   );
 }
